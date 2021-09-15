@@ -12,3 +12,6 @@
 
 ## 0.1.1
 * change description. Null Safety support.
+
+## 0.1.2
+* migrate it to Android embedding v2.

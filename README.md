@@ -20,7 +20,7 @@ Add this to your package's pubspec.yaml file:
 
 ```
 dependencies:
-  flutter_aes_ecb_pkcs5_fork: ^0.1.1
+  flutter_aes_ecb_pkcs5_fork: ^0.1.2
 ```
 
 2. Install it You can install packages from the command line:
@@ -48,24 +48,23 @@ import 'package:flutter_aes_ecb_pkcs5_fork/flutter_aes_ecb_pkcs5_fork.dart';
 ```dart
 import 'package:flutter_aes_ecb_pkcs5_fork/flutter_aes_ecb_pkcs5_fork.dart';
 
-void main() {
+void main() async {
+  var data = "{\"username\":\"helloword\"}";
 
-    var data = "{\"username\":\"helloword\"}";
-    
-    //generate a 16-byte random key
-    var key = await FlutterAesEcbPkcs5.generateDesKey(128);
-    
-    print(key);
-    //encrypt
-    var encryptText = await FlutterAesEcbPkcs5.encryptString(data, key);
-    
-    print(encryptText);
-    //decrypt
-    var decryptText  = await FlutterAesEcbPkcs5.decryptString(encryptText, key);
-    
-    print(decryptText);
-  
+  //generate a 16-byte random key
+  var key = await FlutterAesEcbPkcs5.generateDesKey(128);
+
+  print(key);
+  //encrypt
+  var encryptText = await FlutterAesEcbPkcs5.encryptString(data, key);
+
+  print(encryptText);
+  //decrypt
+  var decryptText = await FlutterAesEcbPkcs5.decryptString(encryptText, key);
+
+  print(decryptText);
 }
+
 ```
 
 #### Run Example Result

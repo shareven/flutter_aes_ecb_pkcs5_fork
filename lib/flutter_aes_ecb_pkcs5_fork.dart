@@ -12,7 +12,7 @@ class FlutterAesEcbPkcs5 {
   /// * If it is a Android device, like 'Android 9.0'.
   /// * If it is a IOS device, like 'IOS 11.2'.
   static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
+    final String version = await _channel.invokeMethod('getPlatformVersion')??"";
     return version;
   }
 
