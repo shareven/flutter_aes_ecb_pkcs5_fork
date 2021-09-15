@@ -15,3 +15,6 @@
 
 ## 0.1.2
 * migrate it to Android embedding v2.
+
+## 0.1.3
+* format dart code.

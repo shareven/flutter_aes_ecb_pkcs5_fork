@@ -20,7 +20,7 @@ Add this to your package's pubspec.yaml file:
 
 ```
 dependencies:
-  flutter_aes_ecb_pkcs5_fork: ^0.1.2
+  flutter_aes_ecb_pkcs5_fork: ^0.1.3
 ```
 
 2. Install it You can install packages from the command line:
