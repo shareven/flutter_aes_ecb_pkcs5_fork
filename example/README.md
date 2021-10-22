@@ -1,6 +1,6 @@
-# flutter_aes_ecb_pkcs5_example
+# example
 
-Demonstrates how to use the flutter_aes_ecb_pkcs5 plugin.
+A new Flutter project.
 
 ## Getting Started
 

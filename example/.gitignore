@@ -22,12 +22,28 @@
 
 # Flutter/Dart/Pub related
 **/doc/api/
+
 .dart_tool/
 .flutter-plugins
+
 .packages
 .pub-cache/
 .pub/
 /build/
+
+# Web related
+lib/generated_plugin_registrant.dart
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
 
 # Android related
 **/android/**/gradle-wrapper.jar
@@ -70,3 +86,6 @@
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
+!android/app/src/main/java/com/smallbuer/flutter_aes_ecb_pkcs5_example/MainActivity.java
+!ios/Runner/**

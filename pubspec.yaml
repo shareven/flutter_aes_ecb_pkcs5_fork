@@ -1,6 +1,6 @@
 name: flutter_aes_ecb_pkcs5_fork
 description: A flutter plugin, a library dedicated to aes_ecb_pkcs5 encryption and decryption, it has high performance and a simple API, small size and stable operation;
-version: 0.1.3
+version: 0.1.4
 homepage: https://github.com/shareven/flutter_aes_ecb_pkcs5_fork.git
 
 # check
